@@ -176,3 +176,7 @@ stdenv.mkDerivation rec {
 ** troubleshooting notes
 - ~standard.js~ doesn't keep the ~package-lock.json~ file in the git tree
   - it makes [[https://github.com/nix-community/yarn2nix][~yarn2nix~]] and [[https://github.com/svanderburg/node2nix][~node2nix~]] useless
+- doing ~npm install~ without lock takes *too many time*!
+
+*** TODO Fork the standard package
+- release a ~package-lock.json~ version for each release!
