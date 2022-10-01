@@ -1,33 +1,29 @@
-{ lib, stdenv, mkYarnPackage, fetchFromGitHub, }:
+{ lib, stdenv, mkYarnPackage, fetchFromGitHub, nodejs }:
 
-let
+stdenv.mkDerivation rec {
   pname = "standard";
   version = "16.0.4";
-in mkYarnPackage {
   name = "${pname}-${version}";
 
-  src =
-    fetchFromGitHub {
-      owner = pname;
-      repo = pname;
-      rev = "f3e27f6b42d4e4745315d8026cd2017780a4565b";
-      hash = "sha256-9klRyrnpdL0RJ8FupICbViG/oa3IFwqDcA6xoP9CvIs=";
-    };
+  src = fetchFromGitHub {
+    owner = pname;
+    repo = pname;
+    rev = "f3e27f6b42d4e4745315d8026cd2017780a4565b";
+    sha256 = "RBEfIPr6HmPlsIb8dJYjClINRmWrn+AOedFiUxwP1xk=";
+  };
 
-  buildPhase = "yarn build";
+  nativeBuildInputs = [ nodejs ];
+
+  configurePhase = "npm install";
 
   installPhase = ''
-    install -dm755 $out
-    cp -r deps/${pname}/build/* $out
+    mv ~/{bin,lib,node_modules,package.json,package-lock.json} $out/
   '';
-
-  distPhase = "true";
 
   meta = with lib; {
     homepage = "https://github.com/${pname}/${pname}";
     license = licenses.mit;
     maintainers = [ maintainers.vlnk ];
     platforms = platforms.all;
-    broken = true;
   };
 }
