@@ -14,6 +14,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ SDL2 ];
 
   NIX_CFLAGS_COMPILE = "-Wno-error=unused-result";
+
   makeFlags = [
     "PREFIX=$(out)"
     "HOME=$(out)"
