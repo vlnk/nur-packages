@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/${pname}/${pname}";
     license = licenses.mit;
-    maintainers = [ maintainers.vlnk ];
+    maintainers = with maintainers; [ vlnk ];
     platforms = platforms.all;
   };
 }

@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "A Dev Environment for Chip8, SuperChip, and XO-Chip";
     license = licenses.unlicense;
-    maintainers = with maintainers; [ maintainers.vlnk ];
+    maintainers = with maintainers; [ vlnk ];
     platforms = platforms.unix;
   };
 }

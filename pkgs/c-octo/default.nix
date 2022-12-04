@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "A C rewrite of the Octo CHIP-8 IDE";
     license = licenses.mit;
-    maintainers = with maintainers; [ maintainers.vlnk ];
+    maintainers = with maintainers; [ vlnk ];
     platforms = platforms.unix;
   };
 }
