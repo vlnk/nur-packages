@@ -1,0 +1,43 @@
+#+startup: showstars indent
+* vlnk's nur-packages
+
+*My personal [[https://github.com/nix-community/NUR][NUR]] repository*
+
+[[https://github.com/vlnk/nur-packages/workflows/Build%20and%20populate%20cache/badge.svg][Build and populate cache]]
+
+[[https://vlnk.cachix.org][[https://img.shields.io/badge/cachix-vlnk-blue.svg][Cachix Cache]]]
+
+** [[https://github.com/ossia/score][ossia-score]]
+See https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ossia-score
+
+*** TODO 📦 Add additionnal libraries [0%]
+**** TODO Required [0/3]
+- [ ] portaudio
+- [ ] jack
+- [ ] clang / LLVM (skipping JIT plug-in)
+**** TODO Recommanded [0/4]
+- [ ] Vorbis, open source lossy audio codec, <www.vorbis.com/> (Enables Vorbis support)
+- [ ] FLAC, Free Lossless Audio Codec Library, <www.xiph.org/flac/> (Enables FLAC support)
+- [ ] Opus, Standardized open source low-latency fullband codec, <www.opus-codec.org/> (Enables experimental Opus support)
+- [ ] Lame, High quality MPEG Audio Layer III (MP3) encoder, <https://lame.sourceforge.io/> (Enables MPEG layer III (MP3) writing support)
+**** TODO Optionnal [0/13]
+- [ ] Sndfile
+- [ ] FFTW
+- [ ] Avahi
+- [ ] Bluez
+- [ ] LeapMotion
+- [ ] SDL2
+- [ ] ALSA
+- [ ] Mpg123 (required version >= 1.25.10)
+- [ ] Speex, an audio codec tuned for speech, <www.speex.org/> (Enables experemental Speex support)
+- [ ] Lilv
+- [ ] Suil
+- [ ] Faust
+- [ ] Ysfx
+
+** Chip8 toolkit
+*** TODO [[https://github.com/lesharris/dorito][dorito]]
+*** [[https://github.com/JohnEarnest/c-octo][c-octo]]
+
+** TODO [[https://github.com/chrismaltby/gb-studio][gb-studio]]
+** TODO [[https://github.com/bintracker/bintracker][bintracker]]
