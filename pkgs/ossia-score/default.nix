@@ -12,8 +12,8 @@
 stdenv.mkDerivation rec {
   owner = "ossia";
   name = "score";
-  pname = "${owner}-${name}";
   version = "3.1.11";
+  pname = "${owner}-${name}-${version}";
 
   src = fetchFromGitHub rec {
     inherit owner;

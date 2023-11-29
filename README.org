@@ -7,20 +7,19 @@
 
 [[https://vlnk.cachix.org][[https://img.shields.io/badge/cachix-vlnk-blue.svg][Cachix Cache]]]
 
-** [[https://github.com/ossia/score][ossia-score]]
-See https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ossia-score
-
-*** TODO 📦 Add additionnal libraries [0%]
-**** TODO Required [0/3]
+** TODO 📦 Add additionnal libraries [0%]
+*** TODO Required [0/3]
 - [ ] portaudio
 - [ ] jack
 - [ ] clang / LLVM (skipping JIT plug-in)
-**** TODO Recommanded [0/4]
+
+*** TODO Recommanded [0/4]
 - [ ] Vorbis, open source lossy audio codec, <www.vorbis.com/> (Enables Vorbis support)
 - [ ] FLAC, Free Lossless Audio Codec Library, <www.xiph.org/flac/> (Enables FLAC support)
 - [ ] Opus, Standardized open source low-latency fullband codec, <www.opus-codec.org/> (Enables experimental Opus support)
 - [ ] Lame, High quality MPEG Audio Layer III (MP3) encoder, <https://lame.sourceforge.io/> (Enables MPEG layer III (MP3) writing support)
-**** TODO Optionnal [0/13]
+
+*** TODO Optionnal [0/13]
 - [ ] Sndfile
 - [ ] FFTW
 - [ ] Avahi
@@ -40,4 +39,35 @@ See https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ossia-score
 *** [[https://github.com/JohnEarnest/c-octo][c-octo]]
 
 ** TODO [[https://github.com/chrismaltby/gb-studio][gb-studio]]
+- better to use AppImage?
+  - [[https://github.com/chrismaltby/gb-studio/releases/download/v3.1.0/gb-studio-linux.AppImage][v3.1.0/gb-studio-linux.AppImage]]
+- packaging
+  - [[https://www.reddit.com/r/NixOS/comments/i4d8yx/how_do_i_package_an_electron_app/][Reddit |  How do i package an electron app?]]
+
 ** TODO [[https://github.com/bintracker/bintracker][bintracker]]
+- [[https://github.com/NixOS/nixpkgs/blob/50f499010a4206c17d9a13cb67c25208597c3d61/pkgs/development/compilers/chicken/5/overrides.nix#L134][flagged as ~broken~]] via the [[https://wiki.call-cc.org/eggref/5/comparse][~comparse~]] library, solutions:
+  - use a flag that skip the readline command
+    - [[https://code.call-cc.org/cgi-bin/gitweb.cgi?p=chicken-core.git;a=blob;f=chicken-install.scm;hb=39448843dee8f4c657d7515674641df39184d1b3#l817][Do you want to replace the existing extensions? (yes/no/abort)]]
+    - a readline tool from nix? I didn't find anyone
+  - fix the broken issue...
+    - [[https://bitbucket.org/DerGuteMoritz/comparse/src/master/][Bitbucket | Moritz Heidkamp | comparse]]
+      - depends on a outdated version of [[https://bitbucket.org/DerGuteMoritz/lazy-seq/src/master/][Bitbucket | Moritz Heidkamp | lazy-seq]]
+    - overriding package with local sources
+      - [[https://ryantm.github.io/nixpkgs/languages-frameworks/chicken/#sec-chicken-override-scope][CHICKEN | nixpkgs | Override Scope]]
+
+
+** TODO Standard
+- should maintain a package-lock.json somewhere
+- + scripts that facilitate long-term maintainability
+
+** sat tools
+*** TODO shmdata
+*** TODO switcher
+*** TODO scenic?
+*** TODO livepose
+*** TODO SATIE
+
+** HOLD OSSIA Score
+- [[https://github.com/NixOS/nixpkgs/pull/174802][NixOS/nixpkgs#174802 ossia-score: init at 3.1.11 by minijackson]]
+  - [[https://github.com/ossia/score/issues/1476][ossia/score#1476 Tracking ossia-score in the package ecosystem]]
+See https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ossia-score
