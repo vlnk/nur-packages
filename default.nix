@@ -16,6 +16,8 @@
 
   c-octo = pkgs.callPackage ./pkgs/c-octo { };
   ossia-score = pkgs.callPackage ./pkgs/ossia-score { };
+  # bintracker = pkgs.callPackage ./pkgs/bintracker { };
+  # gb-studio = pkgs.callPackage ./pkgs/gb-studio { };
   # standard = pkgs.callPackage ./pkgs/standard { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
