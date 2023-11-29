@@ -82,3 +82,8 @@ See https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ossia-score
   position: Some((0, 0))
   Error: No Sound monitor found! Can't forward audio output
   #+end_quote
+
+  - [ ] check source code in order to get how it handles audio
+
+** DONE fountain-rs
+CLOSED: [2023-11-29 Wed 16:03]

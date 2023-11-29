@@ -2,7 +2,7 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "desktopcast";
-  version = "0.0.1";
+  version = "0.1.0";
 
   src = fetchFromGitHub {
     owner = "seijikun";
@@ -37,8 +37,8 @@ rustPlatform.buildRustPackage rec {
   ];
 
   meta = with lib; {
-    description = " CLI utility that screencaptures your Linux desktop and streams it to Kodi via UPNP/DLNA and RTSP ";
-    homepage = "https://github.com/seijikun/desktopcast/tree/master";
+    description = "CLI utility that screencaptures your Linux desktop and streams it to Kodi via UPNP/DLNA and RTSP";
+    homepage = "https://github.com/seijikun/desktopcast";
     license = licenses.asl20;
     maintainers = with maintainers; [ vlnk ];
     platforms = platforms.unix;
