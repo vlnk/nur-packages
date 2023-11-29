@@ -20,5 +20,5 @@
   # gb-studio = pkgs.callPackage ./pkgs/gb-studio { };
   # standard = pkgs.callPackage ./pkgs/standard { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...
+  desktopcast = pkgs.callPackage ./pkgs/desktopcast { };
 }

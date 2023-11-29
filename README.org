@@ -54,7 +54,7 @@
       - depends on a outdated version of [[https://bitbucket.org/DerGuteMoritz/lazy-seq/src/master/][Bitbucket | Moritz Heidkamp | lazy-seq]]
     - overriding package with local sources
       - [[https://ryantm.github.io/nixpkgs/languages-frameworks/chicken/#sec-chicken-override-scope][CHICKEN | nixpkgs | Override Scope]]
-
+- See [[https://github.com/NixOS/nixpkgs/issues/81815][NixOS/nixpkgs#81815 FOSS music trackers packaging effort]]
 
 ** TODO Standard
 - should maintain a package-lock.json somewhere
@@ -71,3 +71,14 @@
 - [[https://github.com/NixOS/nixpkgs/pull/174802][NixOS/nixpkgs#174802 ossia-score: init at 3.1.11 by minijackson]]
   - [[https://github.com/ossia/score/issues/1476][ossia/score#1476 Tracking ossia-score in the package ecosystem]]
 See https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ossia-score
+
+** HOLD Desktopcast
+- [[https://github.com/seijikun/desktopcast][GitHub - seijikun/desktopcast: CLI utility that screencaptures your Linux des...]]
+  finally compile but get an error 🤧:
+
+  #+begin_quote
+  node id: 75
+  size: Some((1920, 1080))
+  position: Some((0, 0))
+  Error: No Sound monitor found! Can't forward audio output
+  #+end_quote
