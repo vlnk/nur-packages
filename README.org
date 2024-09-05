@@ -86,6 +86,9 @@ See https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ossia-score
   - [X] check source code in order to get how it handles audio
     - found the issue: it's only build for pulseaudio
       - [[https://github.com/seijikun/desktopcast/blob/master/src/stream_server.rs#L99]]
+** TODO Oe2sSLE
+- https://github.com/JonathanTaquet/Oe2sSLE
+
 
 ** DONE fountain-rs
 CLOSED: [2023-11-29 Wed 16:03]
