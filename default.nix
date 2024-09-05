@@ -22,4 +22,6 @@
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # desktopcast = pkgs.callPackage ./pkgs/desktopcast { };
   fountain-rs = pkgs.callPackage ./pkgs/fountain-rs { };
+  Oe2sSLE = pkgs.callPackage ./pkgs/Oe2sSLE {};
+  OneTagger = pkgs.callPackage ./pkgs/OneTagger {};
 }
